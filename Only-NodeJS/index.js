@@ -190,6 +190,7 @@ async function getLisMessageIds(auth) {
     }
 }
 
-
-
-authorize().then(getLisMessageIds).catch(console.log('error'));
+const s = 1000;
+setInterval(() =>
+    authorize().then(getLisMessageIds).catch(console.log('error')
+    ), 30 * s);
