@@ -1,0 +1,22 @@
+{
+  "name": "gmail-read-mails",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.1",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.0.3",
+    "googleapis": "^105.0.0",
+    "js-base64": "^3.7.2",
+    "mailparser": "^3.5.0",
+    "node-fetch": "^3.2.10",
+    "open": "^8.4.0",
+    "twilio": "^3.83.0"
+  }
+}
