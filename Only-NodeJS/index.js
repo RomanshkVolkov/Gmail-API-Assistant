@@ -166,8 +166,7 @@ async function getLisMessageIds(auth) {
                 },
             });
             console.log(modify.data);
-            if (index === msgList.length - 1) {
-                console.log(msgMarked);
+            if (index === msgList.length - 1 && msgSend?.length > 0) {
                 wsp(`Tienes pendientes por contestar \n\nDudas: ${dudas}, \nQuejas: ${quejas}, \nCompras: ${compras}\n Correos pendientes: \n ${new Array(...msgListMark).join(' ')}`);
             }
         });
@@ -193,4 +192,4 @@ async function getLisMessageIds(auth) {
 const s = 1000;
 setInterval(() =>
     authorize().then(getLisMessageIds).catch(console.log('error')
-    ), 30 * s);
+    ), 10 * s);
